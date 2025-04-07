@@ -15,36 +15,36 @@
 @font-face {
   font-display: swap;
   font-family: "Urbanist SemiBold";
-  src: url("./src/assets/fonts/Urbanist-SemiBold.woff2") format("woff2");
+  src: url("./public/fonts/Urbanist-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
   font-family: "Urbanist Medium";
-  src: url("./src/assets/fonts/Urbanist-Medium.woff2") format("woff2");
+  src: url("./public/fonts/Urbanist-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
   font-family: "Urbanist Regular";
-  src: url("./src/assets/fonts/Urbanist-Regular.woff2") format("woff2");
+  src: url("./public/fonts/Urbanist-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
   font-family: "Urbanist Light";
-  src: url("./src/assets/fonts/Urbanist-Light.woff2") format("woff2");
+  src: url("./public/fonts/Urbanist-Light.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Urbanist ExtraLight";
-  src: url("./src/assets/fonts/Urbanist-ExtraLight.woff2") format("woff2");
+  src: url("./public/fonts/Urbanist-ExtraLight.woff2") format("woff2");
 }
 
 @font-face {
   font-display: swap;
   font-family: "Xillian";
-  src: url("./src/assets/fonts/Xillian Regular.otf") format("opentype");
+  src: url("./public/fonts/Xillian Regular.otf") format("opentype");
 }
 
 html,
