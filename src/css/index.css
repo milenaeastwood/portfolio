@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@theme {
+  --font-urbanist-semibold: Urbanist SemiBold, sans-serif;
+  --font-urbanist-medium: Urbanist Medium, sans-serif;
+  --font-urbanist-regular: Urbanist Regular, sans-serif;
+  --font-urbanist-light: Urbanist Light, sans-serif;
+  --font-urbanist-extralight: Urbanist ExtraLight, sans-serif;
+  --font-xillian: Xillian, serif;
+  --breakpoint-xs: 450px;
+  --breakpoint-s: 560px;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Urbanist SemiBold";
+  src: url("../fonts/Urbanist-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Urbanist Medium";
+  src: url("../fonts/Urbanist-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Urbanist Regular";
+  src: url("../fonts/Urbanist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Urbanist Light";
+  src: url("../fonts/Urbanist-Light.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Urbanist ExtraLight";
+  src: url("../fonts/Urbanist-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Xillian";
+  src: url("../fonts/Xillian Regular.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist Regular";
+  color: #f3f4f6;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+.bg-gradient-orange {
+  background: linear-gradient(
+    162deg,
+    rgb(162, 52, 162),
+    rgb(186, 68, 49),
+    rgb(225, 149, 53)
+  );
+}
+
+/* ------------------ INTERSECTION OBSERVER – SECTION  ------------------ */
+.hide {
+  opacity: 0;
+  transform: translateY(60px);
+  filter: blur(5px);
+  transition:
+    opacity 2s ease,
+    transform 1.5s ease;
+}
+
+.hide.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.reveal-heading {
+  opacity: 0;
+  transform: translateY(60px);
+  filter: blur(5px);
+  transition:
+    opacity 2s ease,
+    transform 1.5s ease;
+}
+
+.reveal-grid {
+  opacity: 0;
+  transform: translateY(60px);
+  filter: blur(2px);
+  transition:
+    opacity 2s ease,
+    transform 1.5s ease;
+  transition-delay: 0.4s;
+}
+
+.hide.show .reveal-heading,
+.hide.show .reveal-grid {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* ------------------ INTERSECTION OBSERVER – DIV  ------------------ */
+.hideDiv {
+  opacity: 0;
+  transform: translateX(-20%);
+  filter: blur(5px);
+  transition:
+    opacity 1.3s,
+    transform 1s;
+}
+
+.hideDiv.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.hideDiv:nth-child(1) {
+  transition-delay: 100ms;
+}
+
+.hideDiv:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.hideDiv:nth-child(3) {
+  transition-delay: 500ms;
+}
+
+.hideDiv:nth-child(4) {
+  transition-delay: 700ms;
+}
+
+/* ------------------ CARDS ------------------ */
+.bg-skill-card {
+  background: radial-gradient(
+    circle,
+    rgba(247, 138, 51, 0.87) 50%,
+    rgba(155, 64, 136, 0.8674063375350141) 100%
+  );
+}
+
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(157, 65, 128, 0.6) 0%,
+    rgba(162, 69, 102, 0.6) 20%,
+    rgba(170, 74, 71, 0.6) 50%,
+
+    transparent 100%
+  );
+  filter: blur(40px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-glow.hovered::before {
+  opacity: 1;
+}
