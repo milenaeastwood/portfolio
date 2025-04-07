@@ -18,7 +18,7 @@ export const Contact = ({ setEmailOpen }) => {
               className="transition-transform duration-300 ease-in-out hover:scale-120"
             >
               <img
-                src="public/assets/icon-linkedin-100.png"
+                src="/assets/icon-linkedin-100.png"
                 alt="linkedIn"
                 className="h-[32px]"
               />
@@ -29,7 +29,7 @@ export const Contact = ({ setEmailOpen }) => {
               className="transition-transform duration-300 ease-in-out hover:scale-120"
             >
               <img
-                src="public/assets/icon-github-100.png"
+                src="/icon-github-100.png"
                 alt="GitHub"
                 className="h-[32px]"
               />

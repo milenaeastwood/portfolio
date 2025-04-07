@@ -6,25 +6,25 @@ export const Projects = () => {
   const projects = [
     {
       LegoMio: {
-        img: "public/img/LegoMio.png",
+        img: "/images/LegoMio.png",
         url: "https://github.com/milenaeastwood/legomio-fe",
       },
     },
     {
       RecipeRoulette: {
-        img: "public/img/RecipeRoulette.png",
+        img: "/images/RecipeRoulette.png",
         url: "https://github.com/milenaeastwood/recipe-roulette",
       },
     },
     {
       QuizzYourPuzzle: {
-        img: "public/img/QuizzYourPuzzle.png",
+        img: "/images/QuizzYourPuzzle.png",
         url: "https://github.com/milenaeastwood/quizz-your-puzzle",
       },
     },
     {
       SmartyPantz: {
-        img: "public/img/SmartyPantz.png",
+        img: "/images/SmartyPantz.png",
         url: "https://github.com/milenaeastwood/smarty-pantz",
       },
     },
