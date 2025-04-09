@@ -68,6 +68,17 @@ main {
   );
 }
 
+.bg-gradient-orange-slice {
+  background-image: linear-gradient(
+    162deg,
+    rgb(162, 52, 162),
+    rgb(186, 68, 49),
+    rgb(225, 149, 53)
+  );
+  background-size: 300% 100%;
+  background-repeat: no-repeat;
+}
+
 /* ------------------ INTERSECTION OBSERVER – SECTION  ------------------ */
 .hide {
   opacity: 0;

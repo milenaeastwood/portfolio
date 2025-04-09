@@ -11,16 +11,9 @@ export const NavBar = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   return (
     <nav className="fixed top-0 z-50 w-full tracking-wide md:text-[1rem]">
       <div className="font-urbanist-regular mx-auto flex h-16 max-w-5xl items-center justify-end px-4 md:justify-between">
-        <a
-          href="#home"
-          onClick={(e) => {
-            e.preventDefault();
-            useScrollToSection("home");
-          }}
-          className="font-urbanist-bold hidden tracking-wider md:block"
-        >
+        <span className="font-urbanist-bold hidden tracking-wider md:block">
           MILENA OSWALD
-        </a>
+        </span>
         <div
           className="relative h-5 w-7 scale-200 cursor-pointer md:hidden"
           onClick={() => setMobileMenuOpen(true)}

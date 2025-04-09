@@ -22,8 +22,8 @@ export const Skills = () => {
         "GitHub",
         "Agile",
         "Scrum",
+        "Figma",
         "Trello",
-        "Excalidraw",
       ],
     },
   ];
@@ -43,19 +43,26 @@ export const Skills = () => {
 
           <div className="reveal-grid">
             <div className="s:grid-cols-2 s:gap-6 grid grid-cols-1 items-stretch gap-5 md:grid-cols-3 md:gap-9">
-              {skills.map((category) => {
+              {skills.map((category, index) => {
                 const [categoryName, skillList] = Object.entries(category)[0];
+
+                const backgroundPositionClass =
+                  index === 0
+                    ? "bg-left"
+                    : index === 1
+                      ? "bg-center"
+                      : "bg-right";
 
                 return (
                   <div
                     key={categoryName}
-                    className={`bg-skill-card s: s:pt-7 flex h-full max-w-xs flex-col items-stretch rounded-xl px-4 pt-4 pb-6 transition-all duration-500 hover:-translate-y-1 md:px-2 md:pt-8 md:pb-6 ${
+                    className={`bg-gradient-orange-slice ${backgroundPositionClass} s:pt-7 flex h-full max-w-xs flex-col items-stretch rounded-xl px-4 pt-4 pb-6 md:p-8 md:px-2 ${
                       categoryName === "Tools & Collaboration"
                         ? "s:col-span-2 s:px-10 s:py-5 s:mx-auto md:col-span-1 md:mx-0 md:px-4"
                         : ""
                     } `}
                   >
-                    <h3 className="font-urbanist-semibold mb-4 px-1 text-center text-2xl tracking-wide md:mb-6 md:text-[1.7rem]">
+                    <h3 className="font-urbanist-semibold mb-4 px-1 text-center text-2xl tracking-wide md:mb-6 md:px-4 md:text-[1.7rem]">
                       {categoryName}
                     </h3>
                     <div className="mx-2 flex flex-wrap justify-center gap-2 md:mx-5">

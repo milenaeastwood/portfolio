@@ -14,8 +14,9 @@ export const Home = () => {
           <p className="font-urbanist-extralight s:text-[1.15rem] mb-4 text-[1rem] tracking-wide">
             I'm a Web Developer with a passion for clean, responsive design and
             user-focused interfaces. I came into tech from a non-traditional
-            background — and quickly found frontend as the perfect blend of
-            logic, creativity, and purpose.
+            background — and quickly discovered frontend as the space where I
+            can combine my technical skills with a strong sense for design and
+            usability.
           </p>
           <p className="font-urbanist-extralight s:text-[1.15rem] mb-4 text-[1rem] tracking-wide">
             Curious, detail-oriented, and always eager to learn, I enjoy
